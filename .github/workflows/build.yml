@@ -1,4 +1,5 @@
-name: CI
+name: puppy
+
 on:
   push:
     branches: [ main ]
@@ -9,8 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-       - name: Get Date
+                                                                                                    
+                                                                                                    
+      - name: Get Date
         id: get-date
         run: |
           echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
